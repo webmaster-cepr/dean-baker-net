@@ -15,6 +15,11 @@ a:hover {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 /* NAVIGATION STYLE */
 
 #navigation a {
@@ -38,7 +43,7 @@ a:hover {
   border-color: transparent;
 }
 .content h1, #connect h2 {
-  font-family: 'Georgia,sans-serif';
+  font-family: 'Helvetica',sans-serif;
   color: #FFFFFF;
   text-transform: uppercase;
 }
@@ -56,7 +61,7 @@ a:hover {
     text-shadow: 0 1px 1px rgba(0,0,0,0.3);
     padding: 20px;
     background: #000;
-    font-family: Georgia, serif;
+    font-family: 'Georgia', Serif;
     line-height: 50px;
 }
 
@@ -81,6 +86,9 @@ a:hover {
 
 @media screen and (max-width: 800px) {
   /* remove background picture of Dean on smaller screens */
-  #baker { background-image: none; }
+  #baker {
+    background-image: none;
+    padding: 0;
+  }
   
 }
