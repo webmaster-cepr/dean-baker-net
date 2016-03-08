@@ -75,3 +75,12 @@ a:hover {
     box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     margin-top: -20px;
 }
+
+/* MEDIA QUERIES */
+/* iPhone 6 and smaller */
+
+@media screen and (max-width: 800px) {
+  /* remove background picture of Dean on smaller screens */
+  #baker { background-image: none; }
+  
+}
