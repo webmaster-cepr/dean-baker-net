@@ -1,0 +1,174 @@
+$base-color: #232428;
+$content-color: #000000;
+
+@mixin social($position,$filename:filename) {
+  background: {
+    position: $position;
+    image: url(../images/soc_icons/#{$filename}.jpg);
+  }
+}
+
+body {
+  width: 100%;
+  background: #87cfe6;
+  background-image: url('../images/bright_squares.png');
+}
+
+main {
+  background-color: #232428;
+  background-color: rgba($base-color,0.6);
+}
+
+/* MAIN TEXT STYLES */
+
+a { color: #87c2ed;
+  &:hover {
+    color: #87c2ed;
+    text-decoration: none;
+  }
+}
+
+/* NAVIGATION STYLE */
+
+.navigation li {
+
+  margin-bottom: 6px;
+  
+    a {
+      background-color: #FFFFFF;
+      color: #000000;
+      text-transform: uppercase;
+    }
+    a:hover { background-color: #ddd; }
+    &.active a {
+      background-color: #000000;
+      color: #FFFFFF;
+    }
+}
+
+/* END NAVIGATION STYLE */
+
+/* CONTENT STYLES */
+
+.headline {
+  font-family: 'Helvetica',sans-serif;
+  color: #FFFFFF;
+}
+
+.content {
+  background-color: rgba($content-color,0.3);
+  border-color: transparent;
+  
+  h1 { @extend .headline; }
+  h1 small { color: #FFFFFF; }
+  p { color: #FFFFFF; }
+  
+}
+
+#connect h2 { @extend .headline; }
+
+.bookbox {
+  background: rgba(255,255,255,0.6);
+  padding: 12px;
+  box-shadow: 1px 1px 2px rgba($content-color,0.2);
+}
+
+/* END CONTENT STYLES */
+
+
+#header h1  {
+    font-size: 55px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.9);
+    text-shadow: 0 1px 1px rgba($content-color,0.3);
+    padding: 20px;
+    background: #000;
+    font-family: 'Georgia', Serif;
+    line-height: 50px;
+}
+
+#baker {
+  background-image: url('../images/Dean_Baker.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  box-shadow: 1px 1px 2px rgba($content-color,0.2);
+  padding: 0 12px 80px 12px;
+}
+
+/* CONNECT STYLES */
+
+#connect {
+    padding: 12px;
+    background-color: rgba($content-color,0.75);
+    min-height: 250px;
+    box-shadow: 1px 1px 2px rgba($content-color,0.2);
+    margin-top: -20px;
+}
+
+ul.social-media li, ul.social-media li a {
+  height: 36px;
+  width: 36px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#twitter {
+    @include social(top left,social-media);
+    &:hover { @include social(top left,social-media-hov); }
+}
+
+#facebook {
+    @include social(top right,social-media);
+    &:hover { @include social(top right,social-media-hov); }
+}
+
+#linkedin {
+    @include social(bottom left,social-media);
+    &:hover { @include social(bottom left,social-media-hov); }
+}
+
+#tumblr {
+    @include social(bottom right,social-media);
+    &:hover { @include social(bottom right,social-media-hov); }
+}
+
+/* END CONNECT STYLES */
+
+/* FOOTER */
+
+footer {
+  padding: 5px;
+  background-color: rgba($content-color,0.6);
+  width: 100%;
+  height: 25px;
+  color: #FFFFFF;
+  text-align: center;
+  z-index: 900;
+  bottom: 0;
+  position: fixed;
+}
+
+/* END FOOTER */
+
+/* MEDIA QUERIES */
+/* iPad and tablets */
+
+@media screen and (max-width: 800px) {
+  /* remove background picture of Dean on smaller screens */
+  #baker {
+    background-image: none;
+    padding: 0;
+  }
+  
+}
+
+/* iPhone 6 and smaller */
+@media screen and (max-width: 400px) {
+  /* remove background picture of Dean on smaller screens */
+  #connect {
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+}
