@@ -143,7 +143,10 @@ footer {
   /* remove background picture of Dean on smaller screens */
   #baker {
     background-image: none;
-    padding: 0; } }
+    padding: 0; }
+
+  .books li {
+    width: 100%; } }
 /* iPhone 6 and smaller */
 @media screen and (max-width: 400px) {
   /* remove background picture of Dean on smaller screens */
