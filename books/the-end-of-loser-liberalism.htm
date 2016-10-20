@@ -38,11 +38,11 @@
 						<img src="../images/book_covers/end-of-loser-liberalism.jpg"  alt="The End of Loser Liberalism" width="212" height="320">
 						<br/><br/>
        			<ul class="text-left nav nav-pills nav-stacked navigation">
-    					<li><a href="../images/stories/documents/End-of-Loser-Liberalism.pdf" target="_blank" >Free Download (PDF)</a></li>
-    					<li><a href="../images/stories/documents/end-of-loser-liberalism.azw" target="blank">Kindle (.AZW)</a></li>
-    					<li><a href="../images/stories/documents/end-of-loser-liberalism.epub" target="_blank">NOOK (.EPUB)</a></li>
-    					<li><a href="../images/stories/documents/end-of-loser-liberalism.mobi" target="blank">Mobipocket (.MOBI)</a></li>
-    					<li><a href="http://www.lulu.com/product/paperback/the-end-of-loser-liberalism-making-markets-progressive/17163802" target="_blank">Paperback</a></li>
+    					<li><a href="../images/stories/documents/End-of-Loser-Liberalism.pdf" target="_blank" id="pdf">PDF</a></li>
+    					<li><a href="../images/stories/documents/end-of-loser-liberalism.azw" target="blank" id ="azw">Kindle (.AZW)</a></li>
+    					<li><a href="../images/stories/documents/end-of-loser-liberalism.epub" target="_blank" id="epub">EBOOK</a></li>
+    					<li><a href="../images/stories/documents/end-of-loser-liberalism.mobi" target="blank" id="mobi">MOBI</a></li>
+    					<li><a href="http://www.lulu.com/product/paperback/the-end-of-loser-liberalism-making-markets-progressive/17163802" target="_blank" id="amazon">Buy a Paperback Copy</a></li>
       			</ul>
       		</div><!-- END BOOK PIC AND DOWNLOAD INFO -->
       		<div class="panel-body col-md-9 col-md-pull-3">
@@ -119,6 +119,24 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <!-- Custom Scripts -->
 <script src="../js/scripts.js"></script>
+<!-- Download Event -->
+<script>
+    jQuery('#pdf').click(function() {
+      ga('send', 'event', 'pdf', 'download', 'The End of Loser Liberalism');
+    });
+    jQuery('#azw').click(function() {
+      ga('send', 'event', 'azw', 'download', 'The End of Loser Liberalism');
+    });
+    jQuery('#epub').click(function() {
+      ga('send', 'event', 'epub', 'download', 'The End of Loser Liberalism');
+    });
+    jQuery('#mobi').click(function() {
+      ga('send', 'event', 'mobi', 'download', 'The End of Loser Liberalism');
+    });
+    jQuery('#amazon').click(function() {
+      ga('send', 'event', 'amazon', 'purchase', 'The End of Loser Liberalism');
+    });
+</script>
 
 </body>
 

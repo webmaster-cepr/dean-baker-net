@@ -38,11 +38,11 @@
 						<img src="../images/book_covers/getting-back-to-full-employment.jpg"  alt="Getting Back to Full Employment" width="212" height="320">
 						<br/><br/>
        			<ul class="text-left nav nav-pills nav-stacked navigation">
-						<li><a href="../images/stories/documents/Getting Back to Full Employment_20151202_PDF.pdf" target="_blank" >Free Download (PDF)</a></li>
-						<li><a href="http://www.cepr.net/documents/Getting-Back-to-Full-Employment_kindlegen.zip" target="blank">Kindle (.AZW)</a></li>
-						<li><a href="../images/stories/documents/Getting Back To Full Employment_ A Better Bargain for Working People.epub" target="_blank">NOOK (.EPUB)</a></li>
-						<li><a href="../images/stories/documents/Getting+Back+To+Full+Employment_+A+Better+Bargain+for+Working+People.mobi" target="blank">Mobipocket (.MOBI)</a></li>
-						<li><a href="http://www.amazon.com/Getting-Back-Full-Employment-Bargain/dp/0615918352/ref=sr_1_1?ie=UTF8&qid=1384796975&sr=8-1&keywords=%22getting+back+to+full+employment%22" target="_blank">Paperback</a></li>
+						<li><a id="pdf" href="../images/stories/documents/Getting Back to Full Employment_20151202_PDF.pdf" target="_blank" >PDF</a></li>
+						<li><a id="azw" href="http://www.cepr.net/documents/Getting-Back-to-Full-Employment_kindlegen.zip" target="blank">Kindle (.AZW)</a></li>
+						<li><a id="epub" href="../images/stories/documents/Getting Back To Full Employment_ A Better Bargain for Working People.epub" target="_blank">EBOOK</a></li>
+						<li><a id="mobi" href="../images/stories/documents/Getting+Back+To+Full+Employment_+A+Better+Bargain+for+Working+People.mobi" target="blank">MOBI</a></li>
+						<li><a id="amazon" href="http://www.amazon.com/Getting-Back-Full-Employment-Bargain/dp/0615918352/ref=sr_1_1?ie=UTF8&qid=1384796975&sr=8-1&keywords=%22getting+back+to+full+employment%22" target="_blank">Buy a Paperback Copy</a></li>
       			</ul>
       		</div><!-- END BOOK PIC AND DOWNLOAD INFO -->
       		<div class="panel-body col-md-9 col-md-pull-3">
@@ -120,7 +120,25 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <!-- Custom Scripts -->
 <script src="../js/scripts.js"></script>
+<script>
 
+    jQuery('#pdf').click(function() {
+      ga('send', 'event', 'pdf', 'download', 'Getting Back to Full Employment');
+    });
+    jQuery('#mobi').click(function() {
+      ga('send', 'event', 'mobi', 'download', 'Getting Back to Full Employment');
+    });
+    jQuery('#epub').click(function() {
+      ga('send', 'event', 'epub', 'download', 'Getting Back to Full Employment');
+    });
+    jQuery('#azw').click(function(){
+      ga('send', 'event', 'azw', 'download', 'Getting Back to Full Employment');
+    });
+    jQuery('#amazon').click(function() {
+      ga('send', 'event', 'amazon', 'purchase', 'Getting Back to Full Employment');
+    });
+
+</script>
 </body>
 
 </html>

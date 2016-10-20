@@ -38,7 +38,10 @@
 						<img src="../images/book_covers/rigged_cover.jpg"  alt="Rigged: How Globalization and the Rules of the Modern Economy Were Structured to Make the Rich Richer" width="212" height="320">
 						<br/><br/>
        			<ul class="text-left nav nav-pills nav-stacked navigation">
-              <li><a href="http://www.powells.com/biblio/1-9780982417126-1" target="_blank" >Buy it now</a></li>
+              <li><a id="pdf" href="http://deanbaker.net/images/stories/documents/Rigged.pdf" target="_blank" >PDF</a></li>
+              <li><a id="epub" href="http://deanbaker.net/images/stories/documents/Rigged.epub" target="_blank" >EBOOK</a></li>
+              <li><a id="mobi" href="http://deanbaker.net/images/stories/documents/Rigged.mobi" target="_blank" >MOBI</a></li>
+              <li><a id="amazon" href="https://www.amazon.com/Rigged-Globalization-Modern-Economy-Structured/dp/0692793364/ref=sr_1_1?s=books&ie=UTF8&qid=1476721749&sr=1-1&keywords=Rigged%3A+How+Globalization+and+the+Rules+of+the+Modern+Economy+Were+Structured+to+Make+the+Rich+Richer" target="_blank" >Buy a Paperback Copy</a></li>
       			</ul>
       		</div><!-- END BOOK PIC AND DOWNLOAD INFO -->
       		<div class="panel-body col-md-9 col-md-pull-3">
@@ -71,12 +74,29 @@
                 political influence.&quot;</strong></p>
               <p style="text-align:right; font-size:12px; font-style:normal !important;">&mdash; <strong>Robert B. Reich</strong>, Former Secretary of Labor</p></blockquote>
               
-              <blockquote><p ><strong>&quot;Dean Baker’s timely book {Rigged: How Globalization and the Rules of
-                the Modern Economy Were Structured to Make the Rich Richer} is a
+              <blockquote><p ><strong>&quot;Dean Baker’s timely book <em>Rigged: How Globalization and the Rules of
+                the Modern Economy Were Structured to Make the Rich Richer</em> is a
                 must-read for the many who believe the status quo is unsustainable. In
                 clear and compelling terms, Baker makes the case for rewriting the rules
                 so that markets lead to truly progressive outcomes.&quot;</strong></p>
               <p style="text-align:right; font-size:12px; font-style:normal !important;">&mdash; <strong>Katrina vanden Heuvel</strong>, Editor and Publisher of the Nation</p></blockquote>
+              
+              <blockquote><p ><strong>&quot;The era in which all economic policy discussion started from conservative premises that lent themselves to conservative solutions is coming to an end. Conservatives have become caricatures, warning of nonexistent inflation and promoting tax cuts for the rich as the solution to every problem. We are poised for a new progressive era of thinking and policy to deal with festering problems, such as rising inequality and slowing productivity growth, that conservatives are incapable of grasping, let alone dealing with. This book represents fresh thinking for a new progressive era. It may be for the Left what George Gilder’s <em>“Wealth and Poverty”</em> was for the Right.&quot;</strong></p>
+              <p style="text-align:right; font-size:12px; font-style:normal !important;">&mdash; <strong>Bruce Bartlett</strong>, Former aide to Ron Paul and Jack Kemp (U.S. Congress), Ronald Reagan (White House/OPD) and George H.W. Bush (Treasury Dept/Economic Policy)</p></blockquote>
+
+              <blockquote><p ><strong>&quot;Dean Baker’s eye-opening <em>Rigged</em> tells the true story of how American incomes became so unequal. The rich and their handmaidens in the economic profession have told a selective story about the fairness and efficiency of free markets. The true story is that markets are not free. Government, under the influence of the rich and powerful, has written the rules of the game to favor distribution of income upward. Others talk about this theme but no one as comprehensively and insightfully as Baker. He makes starkly clear that, tragically, the U.S. is now a government of the rich, for the rich, and by the rich.&quot;</strong></p>
+              <p style="text-align:right; font-size:12px; font-style:normal !important;">&mdash; <strong>Jeffrey Madrick</strong>, Editor of <em>Challenge: The Magazine of Economic Affairs</em></p></blockquote>
+
+              <blockquote><p ><strong>&quot;High U.S. inequality is the product of conscious policy choices, argues Dean Baker in this excellent and provocative book. He identifies five areas in which the “upward distribution” induced by policies should be reversed: macroeconomics that focus on low inflation only; asymmetric treatment of privatized gains and socialized losses in the finance industry; heavy protection of patent rights at home and abroad; protection of high-skill occupations from foreign competition; and out-of-bounds CEO pay. By identifying five clear areas and giving concrete proposals for a change, Baker’s book should be seen as a roadmap for future U.S. policymakers who wish to bring income and wealth inequality back to sustainable levels.&quot;</strong></p>
+              <p style="text-align:right; font-size:12px; font-style:normal !important;">&mdash; <strong>Branko Milanovic</strong>, Author of <em>Global Inequality: A New Approach for the Age of Globalization</em></p></blockquote>
+
+              <blockquote><p ><strong>&quot;Baker's substantial and carefully referenced book advances logical and evidence-based trade and immigration policy reforms aimed to lift up living standards of all workers.&quot;</strong></p>
+              <p style="text-align:right; font-size:12px; font-style:normal !important;">&mdash; <strong>Teresa Ghilarducci</strong>, The New School for Social Research</p></blockquote>
+
+              <blockquote><p ><strong>&quot;From Adam Smith on, clear-eyed analysts have recognized that markets can be distorted to favor those at the top — that, to use the language of contemporary economics, corporations and the wealthy can extract “rents” from the rest of us. In this provocative new book, Dean Baker shows that the rents in the American economy are high and rising. From patent laws that favor incumbents over innovation to financial and corporate rules that insulate excessive earnings, Baker uncovers the realities underneath the rationalizations of our rent-driven economy. No less important, he provides an agenda for fixing it.&quot;</strong></p>
+              <p style="text-align:right; font-size:12px; font-style:normal !important;">&mdash; <strong>Jacob S. Hacker</strong>, Professor of Political Science, Yale University, and co-author of <em>Winner-Take-All Politics and American Amnesia</em></p></blockquote>
+
+
 
       		</div>
          </div><!-- END SUB ROW 1 -->
@@ -144,6 +164,21 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <!-- Custom Scripts -->
 <script src="../js/scripts.js"></script>
+<!-- Download Event -->
+<script>
+    jQuery('#pdf').click(function() {
+      ga('send', 'event', 'pdf', 'download', 'Rigged');
+    });
+    jQuery('#mobi').click(function() {
+      ga('send', 'event', 'mobi', 'download', 'Rigged');
+    });
+    jQuery('#epub').click(function() {
+      ga('send', 'event', 'epub', 'download', 'Rigged');
+    });
+    jQuery('#amazon').click(function() {
+      ga('send', 'event', 'amazon', 'purchase', 'Rigged');
+    });
+</script>
 
 </body>
 
